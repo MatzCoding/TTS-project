@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SpeechFlow - Convertisseur Texte vers Parole</title>
+</head>
+<body>
+    <div class="background-elements">
+        <div class="gradient-orb gradient-orb-1"></div>
+        <div class="gradient-orb gradient-orb-2"></div>
+    </div>
+
+    <div class="hero">
+        <div class="header">
+            <h1 class="title">
+                Text to speech
+            </h1>
+            <p class="subtitle">Transformez votre texte en parole naturelle</p>
+        </div>
+
+        <div class="card-container">
+            <div class="glass-card">
+                <div class="input-section">
+                    <div class="section-label">
+                        Votre texte
+                    </div>
+                    <textarea 
+                        id="textInput" 
+                        class="text-input"
+                        placeholder="Entrez le texte que vous souhaitez convertir en parole..."
+                    ></textarea>
+                </div>
+
+                <div class="controls-section">
+                    <div class="section-label">
+                        Sélectionnez une voix
+                    </div>
+                    <select id="voiceSelect" class="voice-select"></select>
+                </div>
+
+                <div class="buttons-section">
+                    <button id="playBtn" class="btn btn-play" title="Lancer la lecture">
+                        <span class="btn-text">Lire</span>
+                    </button>
+                    
+                    <button id="stopBtn" class="btn btn-stop" title="Arrêter la lecture" disabled>
+                        <span class="btn-text">Arrêter</span>
+                    </button>
+                </div>
+
+                <div class="status-bar">
+                    <div class="status-indicator" id="status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Prêt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <p>Utilise la synthèse vocale du navigateur pour une prononciation naturelle</p>
+            </div>
+            <div class="info-item">
+                <p>Supporte plusieurs langues et accents selon votre système</p>
+            </div>
+            <div class="info-item">
+                <p>Lecture instantanée sans latence</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

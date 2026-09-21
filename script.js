@@ -1,5 +1,7 @@
 const textInput = document.getElementById('textInput');
 const voiceSelect = document.getElementById('voiceSelect');
+document.getElementById('playBtn');
+const stopBtn =
 const playBtn =  document.getElementById('stopBtn');
 const status = document.getElementById('status');
 const statusDot = document.querySelector('.status-dot');
